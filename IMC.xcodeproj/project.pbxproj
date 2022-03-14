@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		946CDE5827DE68ED001FEC51 /* IMCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946CDE5727DE68ED001FEC51 /* IMCUITests.swift */; };
+		946CDE6227DE9A21001FEC51 /* CalculoIMCScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946CDE6127DE9A21001FEC51 /* CalculoIMCScreen.swift */; };
 		E1A944B52239571500156850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A944B42239571500156850 /* AppDelegate.swift */; };
 		E1A944B72239571500156850 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A944B62239571500156850 /* ViewController.swift */; };
 		E1A944BA2239571500156850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A944B82239571500156850 /* Main.storyboard */; };
@@ -14,7 +16,20 @@
 		E1A944BF2239572B00156850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A944BD2239572B00156850 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		946CDE5B27DE68ED001FEC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1A944A92239571500156850 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1A944B02239571500156850;
+			remoteInfo = IMC;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		946CDE5527DE68ED001FEC51 /* IMCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		946CDE5727DE68ED001FEC51 /* IMCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCUITests.swift; sourceTree = "<group>"; };
+		946CDE6127DE9A21001FEC51 /* CalculoIMCScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoIMCScreen.swift; sourceTree = "<group>"; };
 		E142D9EA22395B36008A4277 /* IMC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IMC.entitlements; sourceTree = "<group>"; };
 		E1A944B12239571500156850 /* IMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A944B42239571500156850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		946CDE5227DE68ED001FEC51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1A944AE2239571500156850 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,10 +58,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		946CDE5627DE68ED001FEC51 /* IMCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				946CDE6027DE965A001FEC51 /* Screens */,
+				946CDE5727DE68ED001FEC51 /* IMCUITests.swift */,
+			);
+			path = IMCUITests;
+			sourceTree = "<group>";
+		};
+		946CDE6027DE965A001FEC51 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				946CDE6127DE9A21001FEC51 /* CalculoIMCScreen.swift */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
 		E1A944A82239571500156850 = {
 			isa = PBXGroup;
 			children = (
 				E1A944B32239571500156850 /* IMC */,
+				946CDE5627DE68ED001FEC51 /* IMCUITests */,
 				E1A944B22239571500156850 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				E1A944B12239571500156850 /* IMC.app */,
+				946CDE5527DE68ED001FEC51 /* IMCUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +110,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		946CDE5427DE68ED001FEC51 /* IMCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 946CDE5D27DE68ED001FEC51 /* Build configuration list for PBXNativeTarget "IMCUITests" */;
+			buildPhases = (
+				946CDE5127DE68ED001FEC51 /* Sources */,
+				946CDE5227DE68ED001FEC51 /* Frameworks */,
+				946CDE5327DE68ED001FEC51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				946CDE5C27DE68ED001FEC51 /* PBXTargetDependency */,
+			);
+			name = IMCUITests;
+			productName = IMCUITests;
+			productReference = 946CDE5527DE68ED001FEC51 /* IMCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E1A944B02239571500156850 /* IMC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1A944C32239572B00156850 /* Build configuration list for PBXNativeTarget "IMC" */;
@@ -92,10 +151,14 @@
 		E1A944A92239571500156850 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Maximiliano da cruz";
 				TargetAttributes = {
+					946CDE5427DE68ED001FEC51 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E1A944B02239571500156850;
+					};
 					E1A944B02239571500156850 = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
@@ -126,11 +189,19 @@
 			projectRoot = "";
 			targets = (
 				E1A944B02239571500156850 /* IMC */,
+				946CDE5427DE68ED001FEC51 /* IMCUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		946CDE5327DE68ED001FEC51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1A944AF2239571500156850 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,6 +215,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		946CDE5127DE68ED001FEC51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				946CDE6227DE9A21001FEC51 /* CalculoIMCScreen.swift in Sources */,
+				946CDE5827DE68ED001FEC51 /* IMCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1A944AD2239571500156850 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,6 +234,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		946CDE5C27DE68ED001FEC51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1A944B02239571500156850 /* IMC */;
+			targetProxy = 946CDE5B27DE68ED001FEC51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E1A944B82239571500156850 /* Main.storyboard */ = {
@@ -175,6 +263,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		946CDE5E27DE68ED001FEC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85WKSP62FE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imc.IMCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IMC;
+			};
+			name = Debug;
+		};
+		946CDE5F27DE68ED001FEC51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85WKSP62FE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imc.IMCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IMC;
+			};
+			name = Release;
+		};
 		E1A944C12239572B00156850 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -336,6 +462,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		946CDE5D27DE68ED001FEC51 /* Build configuration list for PBXNativeTarget "IMCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				946CDE5E27DE68ED001FEC51 /* Debug */,
+				946CDE5F27DE68ED001FEC51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E1A944AC2239571500156850 /* Build configuration list for PBXProject "IMC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
